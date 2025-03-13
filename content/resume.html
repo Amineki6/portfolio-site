@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .contact-info { margin-bottom: 20px; }
+        .section { margin-bottom: 30px; }
+        .section h2 { border-bottom: 2px solid #2c3e50; padding-bottom: 5px; }
+        ul { list-style-type: square; }
+
+        .clickable-images img {
+            width: 210px; /* Adjust for better viewing */
+            height: 297px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect */
+        .clickable-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+    <div class="resume"> 
+        <header>
+            <h1>Amine Kina</h1>
+            <p class="contact-info">
+                <strong>Phone:</strong> +49 1525 7658041 | 
+                <strong>Email:</strong> <a href="mailto:kinaamine@gmail.com">kinaamine@gmail.com</a> | 
+                <strong>GitHub:</strong> <a href="https://github.com/Amineki6" target="_blank">github.com/Amineki6</a> |
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/amineki6/" target="_blank">linkedin.com/amineki6</a>
+            </p>
+        </header>
+    
+        <section class="section">
+            <h2>Education</h2>
+            <p><strong>Master’s in Artificial Intelligence and Intelligent Systems</strong>, University of Bremen<br>
+            10/2024 - Present<br>
+            Advanced Machine Learning - Advanced Methods of AI - Integrated Intelligent Systems</p>
+            
+            <p><strong>Bachelor’s in Robotics and Intelligent Systems</strong>, Constructor University Bremen<br>
+            09/2020 - 08/2023<br>
+            Automation - Artificial Intelligence - Computer Vision</p>
+        </section>
+    
+        <section class="section">
+            <h2>Work Experience</h2>
+            <p><strong>Research Assistant in Data Lab</strong>, Constructor University<br>
+            01/2024 - 08/2024 | <a href="https://github.com/Amineki6/movie-recommendation-system/tree/main">GitHub Repo</a>, <a href="https://amineki6.github.io/movie-recommendation-system/Movie%20Recommendation%20System%20-%20Documentation.pdf" target="_blank">Documentation</a></p>
+            <ul>
+                <li>Developed a scalable microservices-based Movie Recommendation System using Docker, Kafka, and Spring Boot.</li>
+                <li>Implemented a hybrid recommendation model optimizing Precision@10 and Recall@10 metrics.</li>
+                <li>Built an advanced monitoring framework with Prometheus, Grafana, and Locust for real-time evaluation.</li>
+            </ul>
+        </section>
+    
+        <section class="section">
+            <h2>Projects</h2>
+            <p><strong>PillChat Tool</strong>  | <a href="https://github.com/Amineki6/Pillchat" target="_blank">GitHub Repo</a></p>
+            <ul>
+                <li>Utilized Large Language Models (LLM) and Retrieval-Augmented Generation (RAG) for context-aware chatbot responses.</li>
+            </ul>
+            
+            <p><strong>Stock Price Prediction and Trading Agent</strong> | <a href="https://github.com/Amineki6/Stock-Price-Prediction-Trading-Agent/tree/main" target="_blank">GitHub Repo</a></p>
+            <ul>
+                <li>Developed a stock price prediction and trading agent by integrating LSTM-based time series forecasting with a DQN-based reinforcement learning model in a Gym-compatible trading environment.</li>
+            </ul>
+            
+            <p><strong>Maximize Tips Revenue: Predictive Modeling Based on Weather Conditions</strong>  | <a href="https://github.com/Amineki6/Maximize-Tips-Revenue-Predictive-Modeling-Based-on-Weather-Conditions-and-Day-of-the-Week" target="_blank">GitHub Repo</a></p>
+            <ul>
+                <li>Developed a model using Random Forest Regressor to predict optimal workdays based on weather and order prices.</li>
+            </ul>
+    
+            
+        </section>
+    
+        <section class="section">
+            <h2>Skills</h2>
+            <p><strong>Technical:</strong> Python, C++, R, Java (SpringBoot), Docker, PyTorch, API, Kafka, Grafana, Nginx, Redis, AWS</p>
+            <p><strong>Languages:</strong> English (C2), French (C2), Arabic (C2), German (B1)</p>
+        </section>
+    </div>
+    
+
+    <div class="clickable-images">
+        <figure>
+            <a href="./assets/documents/resume.pdf" download="resume.pdf">
+                <img src="./assets/images/home/resume.jpg" alt="Documentation">
+            </a>
+            <figcaption class="image-caption">Download Resume PDF</figcaption>
+        </figure>
+    </div>    
+</div>
+</body>
+</html>

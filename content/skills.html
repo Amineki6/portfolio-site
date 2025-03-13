@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills (Retro Style)</title>
+  <style>
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 15px;
+      border: 2px dashed #333;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed #333;
+      padding-bottom: 5px;
+    }
+
+    /* Skill Categories (Collapsible) */
+    .skill-category {
+      margin: 5px 0;
+      padding: 5px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .skill-category::before {
+      content: "[+]";
+      position: absolute;
+      left: 5px;
+      color: #333;
+      margin-right: 5px;
+    }
+
+    .skill-category.active::before {
+      content: "[-]";
+    }
+
+    .skill-list {
+      list-style: square;
+      padding-left: 20px;
+      margin: 0;
+      display: none;
+    }
+
+    .skill-list li {
+      margin: 2px 0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Skills &amp; Expertise</h2>
+
+    <!-- Programming Languages -->
+    <div class="skill-category">Programming Languages</div>
+    <ul class="skill-list">
+      <li>Python</li>
+      <li>C++</li>
+      <li>R</li>
+      <li>Java (Spring Boot)</li>
+    </ul>
+
+    <!-- Frameworks & Libraries -->
+    <div class="skill-category">Frameworks &amp; Libraries</div>
+    <ul class="skill-list">
+      <li>PyTorch</li>
+      <li>Spring Boot</li>
+    </ul>
+
+    <!-- DevOps & Infrastructure -->
+    <div class="skill-category">DevOps &amp; Infrastructure</div>
+    <ul class="skill-list">
+      <li>Docker</li>
+      <li>Kafka</li>
+      <li>Nginx</li>
+      <li>Redis</li>
+      <li>AWS</li>
+      <li>Azure</li>
+    </ul>
+
+    <!-- Monitoring & Visualization -->
+    <div class="skill-category">Monitoring &amp; Visualization</div>
+    <ul class="skill-list">
+      <li>Grafana</li>
+      <li>Prometheus</li>
+      <li>Tableau</li>
+      <li>Power BI</li>
+    </ul>
+
+    <!-- APIs & Data Processing -->
+    <div class="skill-category">APIs &amp; Data Processing</div>
+    <ul class="skill-list">
+      <li>RESTful APIs</li>
+      <li>Retrieval-Augmented Generation (RAG)</li>
+    </ul>
+
+    <!-- Miscellaneous -->
+    <div class="skill-category">Miscellaneous</div>
+    <ul class="skill-list">
+      <li>Microservices architecture</li>
+      <li>Data analysis &amp; visualization</li>
+      <li>Cloud computing</li>
+      <li>Large Language Models (LLMs)</li>
+    </ul>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Get all skill categories
+        const categories = document.querySelectorAll(".skill-category");
+
+        categories.forEach(category => {
+            category.addEventListener("click", function () {
+                // Toggle active class for arrow change
+                this.classList.toggle("active");
+
+                // Find the next sibling (which should be the UL list)
+                let skillList = this.nextElementSibling;
+
+                if (skillList.style.display === "block") {
+                    skillList.style.display = "none";
+                } else {
+                    skillList.style.display = "block";
+                }
+            });
+        });
+    });
+  </script>
+</body>
+</html>

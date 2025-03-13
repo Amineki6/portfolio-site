@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            
+        }
+        h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .job-title {
+            font-weight: bold;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .image-container img {
+            width: 900px;
+            max-width: none;
+            height: auto;
+            display: block;
+            margin-top: 10px;
+            
+            /* Even shadow all around */
+            /*box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* No X/Y offset */
+            
+        }
+
+        .image-title {
+            font-style: italic;
+            font-size: 15px;
+            color: #717171; /* Adjust color as needed */
+            margin-top: 8px;
+            text-align: center;
+        }
+        .card-img-container{
+            height: 150px;
+            width: 100%;
+            background-color:#f7f6f3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .pdf-container {
+            width: 800px;
+            height: 950px; /* Adjust this value to increase or decrease the height */
+            border: 1px solid #000; /* Optional border for visibility */
+        }
+        .clickable-images {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+            margin-top: 20px;
+        }
+
+        /* A4 size dimensions (approx. 210mm x 297mm) */
+        .clickable-images img {
+            width: 210px; /* Adjust for better viewing */
+            height: 297px;
+            object-fit: cover;
+            border: 1px solid #ccc;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        /* Hover effect */
+        .clickable-images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+        }
+        .image-caption {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div style="font-weight: bold;">
+            AI-Based Bank Statement Aggregation System
+        </div>
+        
+        Developed an advanced AI-powered system for automating the extraction and digitization of bank statements. This project leveraged large language models (LLMs) and OCR frameworks to process structured and unstructured financial data from variously formatted documents. By integrating GPT-4o with Vision capabilities, the system achieved over 90% accuracy in extracting transaction details, reducing reliance on traditional OCR methods and eliminating complex preprocessing steps.       
+        <div class="image-container" style="margin-bottom: 10px;">
+            <figure>
+                <img src="./assets/images/home/statement_picture.png" alt="System Architecture" style="width: 500px;;">
+                <figcaption class="image-caption">Bank Statement Sample</figcaption>
+            </figure>
+        </div>
+        Implemented a Docker-based architecture for seamless deployment and scalability, enabling parallel processing of financial documents. The extracted data was formatted into JSON and CSV and stored in a SQLite3 database for further analysis. The system demonstrated efficiency improvements over manual data entry while addressing challenges related to layout variability, multilingual support, and data correctness.  
+        
+        <div class="clickable-images">
+            <figure>
+                <a href="https://amineki6.github.io/bank-statement-extraction/AI_Bank_Statement_Aggregation.pdf" target="_blank">
+                    <img src="./assets/images/home/documentation_project_bank.jpg" alt="Documentation">
+                </a>
+                <figcaption class="image-caption">View Documentation</figcaption>
+            </figure>
+            
+            <figure>
+                <a href="https://github.com/Amineki6/bank-statement-extraction" target="_blank">
+                    <img src="./assets/images/home/github.jpg" alt="GitHub Repository">
+                </a>
+                <figcaption class="image-caption">View GitHub Repository</figcaption>
+            </figure>
+        </div>
+
+        <hr style="margin-top: 40px; margin-bottom: 40px; border: 0.5px solid #ccc;">
+        <!-- STOCK -->
+
+        <div style="font-weight: bold;">
+            Stock Price Prediction and Trading Agent
+        </div>
+        
+        Developed a stock price prediction and trading agent by integrating time series forecasting with an LSTM model and reinforcement learning (RL) to optimize trading decisions. The system predicts future stock prices using an LSTM-based model and employs a DQN-based RL agent (powered by Stable-Baselines3) to execute trades in a custom Gym-compatible trading environment.
+
+        <div class="image-container" style="margin-bottom: 10px;">
+            <figure>
+                <img src="./assets/images/home/stocks.jpg" alt="System Architecture" style="width: 600px;;">
+            </figure>
+        </div>
+        The project involves data preprocessing, model training, and evaluation, utilizing a historical stock market dataset from Kaggle. The LSTM model is trained to forecast stock prices, and its predictions serve as inputs for the RL agent, which learns to buy, sell, or hold stocks to maximize profitability. The agent’s performance is evaluated using key financial metrics such as total profit, portfolio value, and cumulative reward. To enhance model efficiency, I implemented hyperparameter tuning, feature engineering, and regularization techniques for the LSTM model. Additionally, I experimented with alternative RL algorithms (e.g., PPO, A2C, SAC) and incorporated reward shaping to optimize decision-making.
+       
+        <div class="clickable-images">
+            <figure>
+                <a href="https://github.com/Amineki6/Stock-Price-Prediction-Trading-Agent/tree/main" target="_blank">
+                    <img src="./assets/images/home/github.jpg" alt="GitHub Repository">
+                </a>
+                <figcaption class="image-caption">View GitHub Repository</figcaption>
+            </figure>
+        </div>
+
+
+        <hr style="margin-top: 40px; margin-bottom: 40px; border: 0.5px solid #ccc;">
+        <!-- PILLCHAT -->
+
+        <div style="font-weight: bold;">
+            PillChat Tool - AI Agent
+        </div>
+        
+        Developed PillChat, an AI-powered web application that provides users with reliable and accurate medication information through an interactive chatbot. Utilizing Retrieval-Augmented Generation (RAG), PillChat enhances response accuracy by leveraging patient information leaflets to deliver contextual and trustworthy answers. The platform supports multilingual queries, ensuring accessibility for a global audience. With its intuitive user interface, PillChat enables seamless medication lookup and intelligent conversational interactions, improving healthcare awareness and medication safety.        
+        
+        <div class="image-container" style="margin-bottom: 10px;">
+            <figure>
+                <img src="./assets/images/home/pillchat.png" alt="System Architecture" style="width: 600px;;">
+                <figcaption class="image-caption">Screenshot of the main page</figcaption>
+            </figure>
+        </div>
+        To power efficient and high-accuracy information retrieval, I integrated Pinecone, a scalable vector database, into PillChat. This enables fast and precise semantic search by indexing and retrieving relevant medication details from patient information leaflets. By leveraging Pinecone alongside Retrieval-Augmented Generation (RAG), PillChat delivers contextual and reliable answers, ensuring users receive accurate medication insights in real-time.        
+
+       
+        <div class="clickable-images">
+            <figure>
+                <a href="https://github.com/Amineki6/Pillchat" target="_blank">
+                    <img src="./assets/images/home/github.jpg" alt="GitHub Repository">
+                </a>
+                <figcaption class="image-caption">View GitHub Repository</figcaption>
+            </figure>
+        </div>
+
+        <hr style="margin-top: 40px; margin-bottom: 40px; border: 0.5px solid #ccc;">
+        <!-- THIRD -->
+
+        <div style="font-weight: bold;">
+            Fine-Tuned Model Summarizer
+        </div>
+        
+        Developed a fine-tuned text summarization model deployed using Streamlit, enabling users to input text (up to 512 tokens) and receive concise summaries between 50-150 words. The project demonstrates the full lifecycle of fine-tuning a pre-trained transformer model, hosting it on Hugging Face, and deploying it via a web-based application.        
+        <div class="image-container" style="margin-bottom: 10px;">
+            <figure>
+                <img src="./assets/images/home/transformer_summerization.jpg" alt="System Architecture" style="width: 500px;;">
+            </figure>
+        </div>
+
+        The model was fine-tuned on Google Colab, leveraging Hugging Face Transformers for preprocessing and training. It includes a structured pipeline for dataset preprocessing, tokenization, and model optimization. The Streamlit app provides an intuitive interface where users can generate summaries in real time. The model and tokenizer are automatically fetched from Hugging Face upon startup, ensuring seamless deployment. Additionally, a virtual environment setup ensures smooth dependency management, making the project easy to reproduce and deploy.
+
+       
+        <div class="clickable-images">
+            <figure>
+                <a href="https://github.com/Amineki6/summerization-transformer/tree/main" target="_blank">
+                    <img src="./assets/images/home/github.jpg" alt="GitHub Repository">
+                </a>
+                <figcaption class="image-caption">View GitHub Repository</figcaption>
+            </figure>
+        </div>
+
+
+        <hr style="margin-top: 40px; margin-bottom: 40px; border: 0.5px solid #ccc;">
+        <!-- Fourth -->
+
+        <div style="font-weight: bold;">
+            Maximize Tips Revenue - Predictive Modeling
+        </div>
+        
+        Developed Tip Predictor, a machine learning-powered tool designed to help workers maximize their tip earnings by predicting the best days to work. By analyzing historical data on tips, weather conditions, and order prices, the model provides actionable insights into how external factors influence tipping behavior. The goal is to enable workers to strategically schedule their shifts for higher earnings.        
+        
+        <div class="image-container" style="margin-bottom: 10px;">
+            <figure>
+                <img src="./assets/images/home/tips_project.png" alt="System Architecture" style="width: 600px;;">
+            </figure>
+        </div>
+
+        To achieve this, I implemented a RandomForestRegressor model trained on past tipping data, leveraging feature engineering to categorize weather conditions into intuitive groups such as 'Sunny', 'Cloudy', and 'Rainy'. Additionally, I integrated an external weather API for real-time data processing, ensuring dynamic and accurate predictions. The tool also features visualization capabilities, generating bar plots to illustrate tip trends across different days and weather conditions, making insights more accessible and actionable.
+
+       
+        <div class="clickable-images">
+            <figure>
+                <a href="https://github.com/Amineki6/Maximize-Tips-Revenue-Predictive-Modeling-Based-on-Weather-Conditions-and-Day-of-the-Week/tree/main" target="_blank">
+                    <img src="./assets/images/home/github.jpg" alt="GitHub Repository">
+                </a>
+                <figcaption class="image-caption">View GitHub Repository</figcaption>
+            </figure>
+        </div>
+
+
+    </div>
+</body>
+</html>

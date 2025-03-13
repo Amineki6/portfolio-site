@@ -1,0 +1,38 @@
+{
+    "name": "Amine's portfolio",
+    "icon": "./assets/images/home/Amine.png",
+
+    "pages": [
+        {
+            "icon": "./assets/images/home/Amine.png",
+            "name": "About",
+            "link": "/about",
+            "content": "content/about.html"
+        },
+        {
+            "icon": "📖",
+            "name": "Resume",
+            "link": "/resume",
+            "content": "content/resume.html"
+        },
+        {
+            "icon": "bi bi-suitcase-lg-fill",
+            "name": "Work Experience",
+            "link": "/experience",
+            "content": "content/experience.html"
+        },
+        {
+            "icon": "✨",
+            "name": "Projects",
+            "link": "/projects",
+            "content": "content/projects.html"
+        },
+        {
+            "icon": "✉️",
+            "name": "Contact",
+            "link": "/contact",
+            "content": "content/contact.md"
+        }
+    ]
+
+}
