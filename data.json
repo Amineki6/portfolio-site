@@ -28,6 +28,12 @@
             "content": "content/projects.html"
         },
         {
+            "icon": "✍🏻",
+            "name": "Presentations",
+            "link": "/presenatations",
+            "content": "content/presenatations.html"
+        },
+        {
             "icon": "✉️",
             "name": "Contact",
             "link": "/contact",
